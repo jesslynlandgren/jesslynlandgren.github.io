@@ -244,6 +244,12 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .about-paragraph {
+        font-size: 1em;
+    }
+}
+
 /* ------ SKILLS------ */
 
 .skills {
@@ -398,6 +404,7 @@ a:hover {
     border-radius: 3px;
     padding: 5px 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .summary-buttons {
@@ -525,7 +532,7 @@ a:hover {
     }
 
     .tictactoe {
-        width: 50%;
+        width: 40%;
         -webkit-filter: grayscale(100%); /* Safari */
         filter: grayscale(100%);
     }
@@ -543,6 +550,7 @@ a:hover {
     background-image: url('../img/googlemaps_GT.png');
     background-size: cover;
     background-position: center;
+
 }
 
 .filter-contact {
@@ -593,6 +601,34 @@ a:hover {
     color: #03a9f4;
 }
 
+@media screen and (max-width: 500px){
+    .workwithme {
+        font-size: 1.5em;
+    }
+
+    .workwithme-sub {
+        font-size: 1.1em;
+    }
+
+    .contact-buttons {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .workwithme {
+        font-size: 1.2em;
+    }
+
+    .workwithme-sub {
+        font-size: .9em;
+    }
+
+    .contact-buttons {
+        font-size: .6em;
+    }
+}
+
 
 /* ------ CREDIT------ */
 
@@ -600,4 +636,10 @@ a:hover {
     height: 80px;
     background: #01579B;
     color: white;
+}
+
+@media screen and (max-width: 350px){
+    .credit {
+        font-size: .9em;
+    }
 }
