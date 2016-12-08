@@ -127,7 +127,7 @@ a:hover {
 }
 
 .cell {
-    border: 4px solid orange;
+    /*border: 4px solid orange;*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -334,19 +334,19 @@ a:hover {
 }
 
 .project-content-box {
-    border: 4px solid green;
+    /*border: 4px solid green;*/
     width: 80%;
     height: 80%;
 }
 
 .summary,
 .preview {
-    height: 300px;
+    /*border: 4px solid blue;*/
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    /*padding: 20px 50px 20px 50px;*/
+    align-items: center;
 }
 
 .preview {
@@ -364,11 +364,20 @@ a:hover {
 .four-light {background: #0288d1;}
 .four-dark {background: #0277bd;}
 
+.content-box {
+    /*border: 4px solid purple;*/
+    width: 90%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;*/
+}
+
 .summary-title {
     color: white;
     margin-bottom: 20px;
     font-size: 3em;
     font-family: 'Arvo', sans-serif;
+    display: flex;
 }
 
 .summary-text {
@@ -394,10 +403,11 @@ a:hover {
 .summary-buttons {
     border: 2px solid white;
     border-radius: 1px;
-    display: flex;
+    float: left;
 }
 
 .summary-buttons a {
+    /*border: 4px solid orange;*/
     font-size: 1.5em;
     padding: 5px 10px;
 }
@@ -462,7 +472,7 @@ a:hover {
 }
 
 .airnav {
-    width: 70%;
+    width: 30%;
 }
 
 .nerdreview {
@@ -494,6 +504,30 @@ a:hover {
     .summary,
     .preview {
         height: 400px;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .airnav {
+        width: 60%;
+    }
+
+    .nerdreview {
+        width: 80%;
+        -webkit-filter: grayscale(100%); /* Safari */
+        filter: grayscale(100%);
+    }
+
+    .tripgoalie {
+        width: 80%;
+    }
+
+    .tictactoe {
+        width: 50%;
+        -webkit-filter: grayscale(100%); /* Safari */
+        filter: grayscale(100%);
     }
 }
 
