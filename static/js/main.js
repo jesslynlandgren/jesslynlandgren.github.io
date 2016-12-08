@@ -7,6 +7,8 @@ $(document).ready(function(){
     $('.filter-skills').css('height', skillsHeight);
     var contactHeight = $('.contact').height();
     $('.filter-contact').css('height', contactHeight);
+    var tagHeight = $('.tag').height();
+    $('.filter-tag').css('height', tagHeight);
     var iconWidth = $('.skill-icon').width();
     $('.icon-grid').css('max-width', iconWidth);
 });
@@ -20,6 +22,8 @@ $(window).resize(function(){
     $('.filter-skills').css('height', skillsHeight);
     var contactHeight = $('.contact').height();
     $('.filter-contact').css('height', contactHeight);
+    var tagHeight = $('.tag').height();
+    $('.filter-tag').css('height', tagHeight);
     var iconWidth = $('.skill-icon').width();
     $('.icon-grid').css('max-width', iconWidth);
 });

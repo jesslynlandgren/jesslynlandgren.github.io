@@ -12,7 +12,7 @@ html {
 body {
     /*border: 4px solid green;*/
     height: 100%;
-    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -69,36 +69,6 @@ a:hover {
 .nav-social a:hover{
     background-color: white;
 }
-
-/*.email {background-color: #dd4b39;}
-.email:hover {color: #dd4b39;}
-
-.github {background-color: black;}
-.github:hover {color: black;}
-
-.linkedin {background-color: #0077b5;}
-.linkedin:hover {color: #0077b5;}
-
-.twitter{background-color: #1da1f2;}
-.twitter:hover{color: #1da1f2;}
-
-.medium{background-color: #00AB6C;}
-.medium:hover {color: #00AB6C;}*/
-
-/*.email {background-color: #bdbdbd;}
-.email:hover {color: #bdbdbd;}
-
-.github {background-color: #818181;}
-.github:hover {color: #818181;}
-
-.linkedin {background-color: #5b5b5b;}
-.linkedin:hover {color: #5b5b5b;}
-
-.twitter{background-color: #343434;}
-.twitter:hover{color: #343434;}
-
-.medium{background-color: #292929;}
-.medium:hover {color: #292929;}*/
 
 .email {background-color: #4fc3f7;}
 .email:hover {color: #4fc3f7;}
@@ -157,7 +127,7 @@ a:hover {
 }
 
 .cell {
-    /*border: 4px solid orange;*/
+    border: 4px solid orange;
     width: 100%;
     height: 100%;
     display: flex;
@@ -174,13 +144,55 @@ a:hover {
 /* ------ TAG------ */
 
 .tag {
-    background: #e1f5fe;
+    background-image: url('../img/googlemaps_IC.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-tag {
+    /*border: 4px solid blue;*/
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .tagline {
+    /*border: 4px solid red;*/
     font-family: 'Arvo', sans-serif;
     font-size: 4em;
+    color: white;
+    z-index: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.tagline-small {
+    /*border: 4px solid purple;*/
+    font-size: 2em;
     color: #0288d1;
+    z-index: 1;
+}
+
+.down {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    z-index: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .tagline {
+        font-size: 3em;
+    }
+
+    .tagline-small {
+        font-size: 1.5em;
+    }
 }
 
 /* ------ ABOUT ------ */
@@ -192,11 +204,38 @@ a:hover {
 .about-me {
     background: #039be5;
     color: white;
+    /*padding: 30px 40px;*/
+}
+
+.about-inner {
+    /*border: 4px solid red;*/
+    height: 80%;
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-line {
+    font-family: 'Arvo', sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about-paragraph {
+    font-size: 1.2em;
 }
 
 .pic {
     display: none;
     background: #0288d1;
+}
+
+.pic img {
+    width: 50%;
+    border-radius: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -209,7 +248,7 @@ a:hover {
 
 .skills {
     /*border: 4px solid orange;*/
-    background-image: url('../img/stringmap_orig.jpg');
+    background-image: url('../img/mapbox_asheville.png');
     background-size: cover;
 }
 
@@ -240,9 +279,10 @@ a:hover {
     height: 30%;
     display: flex;
     align-items: center;
-    color: white;
+    color: #03a9f4;
     font-size: 2em;
     text-transform: uppercase;
+    font-family: 'Arvo', sans-serif;
 }
 
 .skill-grid {
@@ -293,6 +333,12 @@ a:hover {
     flex-direction: column;
 }
 
+.project-content-box {
+    border: 4px solid green;
+    width: 80%;
+    height: 80%;
+}
+
 .summary,
 .preview {
     height: 300px;
@@ -300,10 +346,11 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px 50px 20px 50px;
+    /*padding: 20px 50px 20px 50px;*/
 }
 
 .preview {
+    display: none;
     flex-direction: row;
     align-items: center;
 }
@@ -321,6 +368,7 @@ a:hover {
     color: white;
     margin-bottom: 20px;
     font-size: 3em;
+    font-family: 'Arvo', sans-serif;
 }
 
 .summary-text {
@@ -332,6 +380,7 @@ a:hover {
 .summary-techs {
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tech {
@@ -355,37 +404,91 @@ a:hover {
 
 .repo {
     color: white;
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.repo:before {
+    background: white;
 }
 
 .demo {
     background: white;
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
 }
 
 .demo-one {color: #b3e5fc;}
-.demo-two {color: #29b6f6;}
+.demo-two {color: #4fc3f7;}
 .demo-three {color: #03a9f4;}
-.demo-four {color: #0277bd;}
+.demo-four {color: #0288d1;}
+
+.demo-one:before {background: #b3e5fc;}
+.demo-two:before {background: #4fc3f7;}
+.demo-three:before {background: #03a9f4;}
+.demo-four:before {background: #0288d1;}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  /*background: #2098D1;*/
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
 
 .airnav {
-    height: 70%;
-    margin-right: 10px;
-    -webkit-filter: grayscale(100%); /* Safari */
-    filter: grayscale(100%);
+    width: 70%;
 }
 
 .nerdreview {
+    width: 90%;
     -webkit-filter: grayscale(100%); /* Safari */
     filter: grayscale(100%);
 }
 
-.project-logo {
-    max-width: 70%;
+.tripgoalie {
+    width: 90%;
+}
+
+.tictactoe {
+    width: 50%;
+    -webkit-filter: grayscale(100%); /* Safari */
+    filter: grayscale(100%);
 }
 
 
 @media screen and (min-width: 768px) {
     .project {
         flex-direction: row;
+    }
+
+    .preview {
+        display: flex;
     }
 
     .summary,
@@ -400,8 +503,12 @@ a:hover {
 .contact {
     height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../img/googlemaps_GT.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .filter-contact {
@@ -414,11 +521,49 @@ a:hover {
 }
 
 .workwithme {
+    margin-bottom: 30px;
+    font-family: 'Arvo', sans-serif;
+    color: white;
+    z-index: 1;
+    font-size: 2em;
+}
+
+.workwithme-sub {
+    margin-bottom: 30px;
+    color: white;
+    z-index: 1;
+    font-size: 1.3em;
+}
+
+.contact-buttons {
+    display: flex;
+}
+
+.resume {
+    margin-right: 30px;
+}
+
+.talk,
+.resume {
     z-index: 1;
     text-transform: uppercase;
-    font-size: 2.7em;
+    font-size: 1.5em;
     border: 2px solid white;
     padding: 10px 20px;
     color: white;
     border-radius: 1px;
+    /*font-family: 'Arvo', sans-serif;*/
+}
+
+.blue {
+    color: #03a9f4;
+}
+
+
+/* ------ CREDIT------ */
+
+.credit {
+    height: 80px;
+    background: #01579B;
+    color: white;
 }

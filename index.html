@@ -16,20 +16,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/profilepic_iceland.jpg" media="screen" title="no title">
 
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 
-    <!-- Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu|Text+Me+One|Space+Mono|Raleway+Dots" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
     <!-- jQuery library -->
     <script src="static/js/jquery.js"></script>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="static/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="static/js/main.js"></script>
@@ -52,20 +48,29 @@
 
     <div class="container-main">
         <div class="section tag">
-            <div class="cell tagline">
+            <div class="filter-tag"></div>
+            <div class="tagline">
                 Full-stack Developer
             </div>
+            <div class="tagline-small">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Atlanta, GA
+            </div>
+            <i class="fa fa-chevron-down down" aria-hidden="true"></i>
         </div>
+
         <div class="section about">
             <div class="cell about-me">
-                Lover of all things detailed, colorful, and spatial
-
-                I am currently a student in the immersive full-stack development bootcamp at Digital Crafts. I am coming to the world of development via the environmental and earth sciences. After a few early career years as an environmental engineering consultant, I knew I wanted to explore my interests in computing and organizing information. I fell into coding and haven't looked back! In my spare professional time, I play with geographic applications and visualizations as much as possible.
-
-                I grew up in North Carolina, and have been in and out of the Atlanta area since. After finishing the Digital Crafts program in early January 2017, I will be looking for a full-time development position in the north Atlanta metro and OTP north areas. In my non-professional spare time, I enjoy swimming, hiking, and netflix binges.
+                <div class="about-inner">
+                    <div class="about-line">
+                        Lover of all things detailed, colorful, and spatial
+                    </div>
+                    <div class="about-paragraph">
+                        I entered the world of development via the environmental and geographical sciences. After a few early career years as an environmental engineering consultant and graduate school in geoinformatics, I knew I wanted to explore my interests in computing and organizing information. I fell into coding and haven't looked back! In my spare professional time, I play with geographic applications and visualizations as much as possible.
+                    </div>
+                </div>
             </div>
             <div class="cell pic">
-                Profile Pic
+                <img src="static/img/profilepic_iceland.jpg" alt="">
             </div>
         </div>
 
@@ -113,6 +118,10 @@
                         <i class="skill-icon devicon-java-plain"></i>
                     </div>
                     <div class="icon-grid">
+                        <div class="label">JQuery</div>
+                        <i class="skill-icon devicon-jquery-plain"></i>
+                    </div>
+                    <div class="icon-grid">
                         <div class="label">Bootstrap</div>
                         <i class="skill-icon devicon-bootstrap-plain"></i>
                     </div>
@@ -124,20 +133,24 @@
                 </div>
                 <div class="skill-grid">
                     <div class="icon-grid">
-                        <div class="label">Sketch</div>
-                        <i class="skill-icon devicon-html5-plain"></i>
+                        <div class="label">React.js</div>
+                        <i class="skill-icon devicon-react-original"></i>
+                    </div>
+                    <div class="icon-grid">
+                        <div class="label">D3.js</div>
+                        <i class="skill-icon devicon-d3js-plain"></i>
+                    </div>
+                    <div class="icon-grid">
+                        <div class="label">Wordpress</div>
+                        <i class="skill-icon devicon-wordpress-plain"></i>
                     </div>
                     <div class="icon-grid">
                         <div class="label">Photoshop</div>
-                        <i class="skill-icon devicon-css3-plain"></i>
-                    </div>
-                    <div class="icon-grid">
-                        <div class="label">ReactJS</div>
-                        <i class="skill-icon devicon-javascript-plain"></i>
+                        <i class="skill-icon devicon-photoshop-line"></i>
                     </div>
                     <div class="icon-grid">
                         <div class="label">Ruby</div>
-                        <i class="skill-icon devicon-angularjs-plain"></i>
+                        <i class="skill-icon devicon-ruby-plain"></i>
                     </div>
                 </div>
             </div>
@@ -146,30 +159,34 @@
         <div class="section portfolio">
             <div class="cell project">
                 <div class="cell summary one-light">
-                    <div class="summary-title">
-                        AirNav
-                    </div>
-                    <div class="summary-text">
-                        Customized portfolio for a filmmaker. This website presents his activity and the projects he has done. Moreover, it contains an administrator panel allowing to add and update the projects and all information contained in the website.
-                    </div>
-                    <div class="summary-techs">
-                        <div class="tech">HTML/CSS</div>
-                        <div class="tech">JavaScript</div>
-                        <div class="tech">AngularJS</div>
-                        <div class="tech">Python</div>
-                        <div class="tech">Leaflet</div>
-                    </div>
-                    <div class="summary-buttons">
-                        <a class="repo" href="https://airnavatl.com">Github</a>
-                        <a class="demo demo-one" href="https://airnavatl.com">Live Demo</a>
+                    <div class="">
+                        <div class="summary-title">
+                            AirNav
+                        </div>
+                        <div class="">
+
+                        </div>
+                        <div class="summary-text">
+                            Customized portfolio for a filmmaker. This website presents his activity and the projects he has done. Moreover, it contains an administrator panel allowing to add and update the projects and all information contained in the website.
+                        </div>
+                        <div class="summary-techs">
+                            <div class="tech">HTML/CSS</div>
+                            <div class="tech">JavaScript</div>
+                            <div class="tech">AngularJS</div>
+                            <div class="tech">Python</div>
+                            <div class="tech">Leaflet</div>
+                        </div>
+                        <div class="summary-buttons">
+                            <a class="hvr-underline-from-center repo repo-one" href="https://github.com/DigitalCrafts-September-2016-Cohort/the_a_team2">Github</a>
+                            <a class="hvr-underline-from-center demo demo-one" href="https://airnavatl.com">Live Demo</a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="cell preview one-dark">
-                    <!-- <img class="airnav" src="static/img/airnav/splash_page.png" alt="">
-                    <img class="airnav" src="static/img/airnav/search_result_D1.png" alt="">
-                    <img class="airnav" src="static/img/airnav/nav_view_chipotle.png" alt=""> -->
-                    <img class="project-logo" src="static/img/airnav/black_logo.png" alt="">
+                    <img class="airnav" src="static/img/airnav/black_logo.png" alt="">
                 </div>
+
             </div>
             <div class="cell project">
                 <div class="cell preview two-dark">
@@ -189,8 +206,8 @@
                         <div class="tech">Flask/Jinja</div>
                     </div>
                     <div class="summary-buttons">
-                        <a class="repo" href="https://github.com/DigitalCrafts-September-2016-Cohort/team_freedom_nerdreview">Github</a>
-                        <a class="demo demo-two" href="https://nerdreview.co">Live Demo</a>
+                        <a class="hvr-underline-from-center repo repo-two" href="https://github.com/DigitalCrafts-September-2016-Cohort/team_freedom_nerdreview">Github</a>
+                        <a class="hvr-underline-from-center demo demo-two" href="https://nerdreview.co">Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -209,30 +226,34 @@
                         <div class="tech">Flask/Jinja</div>
                     </div>
                     <div class="summary-buttons">
-                        <a class="repo" href="https://github.com/SoccerStreets/soccerstreets">Github</a>
-                        <a class="demo demo-three" href="https://soccerstreet.herokuapp.com">Live Demo</a>
+                        <a class="hvr-underline-from-center repo repo-three" href="https://github.com/SoccerStreets/soccerstreets">Github</a>
+                        <a class="hvr-underline-from-center demo demo-three" href="https://soccerstreets.herokuapp.com">Live Demo</a>
                     </div>
                 </div>
-                <div class="cell preview three-dark">three pic</div>
+                <div class="cell preview three-dark">
+                    <img class="tripgoalie" src="static/img/tripgoalie/Trip-Goalie-Logo-with-bg-with-trip.png" alt="">
+                </div>
             </div>
             <div class="cell project">
-                <div class="cell preview four-dark">four pic</div>
+                <div class="cell preview four-dark">
+                    <img class="tictactoe" src="static/img/tictactoe/grid.png" alt="">
+                </div>
                 <div class="cell summary four-light">
                     <div class="summary-title">
-                        AirNav
+                        TicTacToe What
                     </div>
                     <div class="summary-text">
                         Customized portfolio for a filmmaker. This website presents his activity and the projects he has done. Moreover, it contains an administrator panel allowing to add and update the projects and all information contained in the website.
                     </div>
                     <div class="summary-techs">
                         <div class="tech">HTML/CSS</div>
-                        <div class="tech">Python</div>
-                        <div class="tech">Flask</div>
-                        <div class="tech">PostGresSQL</div>
+                        <div class="tech">JavaScript</div>
+                        <div class="tech">JQuery</div>
+                        <div class="tech">Bootstrap</div>
                     </div>
                     <div class="summary-buttons">
-                        <a class="repo" href="https://airnavatl.com">Github</a>
-                        <a class="demo demo-four" href="https://airnavatl.com">Live Demo</a>
+                        <a class="hvr-underline-from-center repo" href="https://github.com/jesslynlandgren/tictactoe_jq">Github</a>
+                        <a class="hvr-underline-from-center demo demo-four" href="#">Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -241,14 +262,28 @@
 
     <div class="section contact">
         <div class="filter-contact"></div>
-        <a href="static/docs/resume.pdf" target="_blank" class="workwithme">
-            Download Resume
-        </a>
+        <div class="workwithme">
+            Have a project you need help with?
+        </div>
+        <div class="workwithme-sub">
+            I love building things from start to finish!
+        </div>
+        <div class="contact-buttons">
+            <a href="static/docs/resume.pdf" target="_blank" class="resume">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;<span class="blue">Resume</span>
+            </a>
+            <a href="mailto:jesslynlandgren.com" target="_blank" class="talk">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<span class="blue">Let's Talk</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="section credit">
+        built by jesslyn landgren  |  Copyright &copy 2016
     </div>
 
 
 </body>
-
 
 
 </html>
