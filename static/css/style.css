@@ -30,15 +30,17 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     /*border-bottom: 4px solid white;*/
 }
 
 .nav-name{
     /*border: 4px solid orange;*/
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     background-color: #292929;
     color: #fff;
+    letter-spacing: 3px;
 }
 
 .name {
@@ -51,7 +53,6 @@ a:hover {
     /*border: 4px solid green;*/
     display: flex;
     display: -webkit-flex;
-
 }
 
 .nav-social a{
@@ -60,7 +61,9 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
     padding: 5px 0 5px 0;
     font-size: 1.2em;
     color: white;
@@ -125,8 +128,11 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     text-align: center;
 }
 
@@ -137,7 +143,9 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -149,19 +157,22 @@ a:hover {
 /* ------ TAG------ */
 
 .tag {
-    background-image: url('../img/googlemaps_IC.png');
+    background-image: url('../img/googlemaps_GT.png');
     background-size: cover;
     background-position: center;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .filter-tag {
     /*border: 4px solid blue;*/
     position: absolute;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 28, 50, 0.85);
+    /*#043f6e*/
     z-index: 0;
     width: 100%;
     height: 100%;
@@ -180,15 +191,30 @@ a:hover {
 .tagline-small {
     /*border: 4px solid purple;*/
     font-size: 2em;
-    color: #0288d1;
+    color: #039be5;
     z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.marker-icon {
+    /*border: 4px solid blue;*/
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.location-text {
+    /*border: 4px solid orange;*/
+    font-weight: bold;
 }
 
 .down {
-    position: absolute;
-    bottom: 30px;
+    /*position: absolute;*/
+    /*bottom: 30px;*/
+    margin-top: 100px;
     color: white;
     z-index: 1;
+    font-size: 2em;
 }
 
 @media screen and (max-width: 400px) {
@@ -216,12 +242,14 @@ a:hover {
 .about-inner {
     /*border: 4px solid red;*/
     height: 80%;
-    width: 80%;
+    width: 70%;
     text-align: left;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .about-line {
@@ -280,6 +308,7 @@ a:hover {
     height: 500px;
     z-index: 1;
     flex-direction: column;
+    -webkit-flex-direction: column;
 }
 
 .want {
@@ -287,13 +316,16 @@ a:hover {
     height: 500px;
     z-index: 1;
     flex-direction: column;
+    -webkit-flex-direction: column;
 }
 
 .skill-title {
-    height: 30%;
+    /*border: 4px solid yellow;*/
+    height: 20%;
     display: flex;
     display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     color: #03a9f4;
     font-size: 2em;
     text-transform: uppercase;
@@ -301,12 +333,16 @@ a:hover {
 }
 
 .skill-grid {
+    /*border: 4px solid red;*/
     display: flex;
     display: -webkit-flex;
     align-items: flex-start;
+    -webkit-align-items: flex-start;
     justify-content: center;
+    -webkit-justify-content: center;
     flex-wrap: wrap;
-    height: 70%;
+    height: 60%;
+    width: 80%;
     color: white;
     padding: 0 30px 0px 30px;
 }
@@ -316,7 +352,9 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
-    margin-right: 20px;
+    -webkit-flex-direction: column;
+    margin-right: 40px;
+    margin-bottom: 10px;
 }
 
 .label {
@@ -327,7 +365,7 @@ a:hover {
 
 .skill-icon {
     /*border: 4px solid blue;*/
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 
@@ -341,36 +379,48 @@ a:hover {
 /* ------ PORTFOLIO------ */
 .portfolio {
     /*border: 4px solid green;*/
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
 }
 
 .project {
     /*border: 4px solid yellow;*/
-    display: flex;
     display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
+
 }
 
-.project-content-box {
-    /*border: 4px solid green;*/
+/*.project-content-box {
+    border: 4px solid green;
     width: 80%;
     height: 80%;
-}
+}*/
 
 .summary,
 .preview {
     /*border: 4px solid blue;*/
     height: 450px;
-    display: flex;
     display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
 .preview {
     display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -385,7 +435,7 @@ a:hover {
 
 .content-box {
     /*border: 4px solid purple;*/
-    width: 90%;
+    width: 80%;
     /*display: flex;
     flex-direction: column;
     justify-content: flex-start;*/
@@ -396,8 +446,8 @@ a:hover {
     margin-bottom: 20px;
     font-size: 3em;
     font-family: 'Arvo', sans-serif;
-    display: flex;
     display: -webkit-flex;
+    display: flex;
 }
 
 .summary-text {
@@ -408,8 +458,9 @@ a:hover {
 
 .summary-techs {
     margin-bottom: 20px;
-    display: flex;
     display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -516,12 +567,14 @@ a:hover {
 
 @media screen and (min-width: 768px) {
     .project {
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: row;
         flex-direction: row;
     }
 
     .preview {
-        display: flex;
         display: -webkit-flex;
+        display: flex;
     }
 
     .summary,
@@ -534,7 +587,7 @@ a:hover {
     }
 
     .airnav {
-        width: 60%;
+        width: 50%;
     }
 
     .nerdreview {
@@ -558,13 +611,17 @@ a:hover {
 /* ------ CONTACT------ */
 
 .contact {
+    /*border: 4px solid yellow;*/
     height: 300px;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
-    background-image: url('../img/googlemaps_GT.png');
+    -webkit-align-items: center;
+    background-image: url('../img/googlemaps_IC.png');
     background-size: cover;
     background-position: center;
 
