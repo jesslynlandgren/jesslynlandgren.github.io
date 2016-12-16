@@ -382,6 +382,7 @@ a:hover {
     -webkit-box-orient: vertical;
     -webkit-flex-direction: column;
     flex-direction: column;
+    height: 1800px;
 }
 
 .project {
@@ -566,6 +567,11 @@ a:hover {
 
 
 @media screen and (min-width: 768px) {
+
+    .portfolio {
+      height: 1600px;
+    }
+
     .project {
         -webkit-box-orient: horizontal;
         -webkit-flex-direction: row;
